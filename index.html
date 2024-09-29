@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <!-- Font Awesome for the icon -->
+    <title>Reviving Calabar South</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h1>Reviving Calabar South</h1>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Unlocking the Lost Potential of Calabar Port Market</h2>
+        <p
+          class=""
+          style="
+            color: #333333;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+          "
+        >
+          A story of infrastructure needs and immense opportunity in Cross River
+          State
+        </p>
+      </div>
+    </section>
+
+    <main>
+      <section class="content">
+        <article>
+          <h2>Historical Significance: From Prosperity to Neglect</h2>
+          <p>
+            Calabar South, during the reign of Nigeria's first government,
+            thrived as a hub for international trade. At the heart of this
+            economic activity was the Calabar Port, which served as a key point
+            for import and export. The waterfront was not only vital for
+            generating revenue but also attracted foreign settlers, whose
+            abandoned homes still stand today. This bustling trade center was a
+            source of pride for the state.
+          </p>
+          <p>
+            However, the once-vibrant Calabar Port Market is now a shadow of
+            its former self. Neglect has turned it into a marketplace for petty
+            traders, overshadowing its potential as a significant economic
+            asset. The river that runs through Calabar South, which could serve
+            as both a transportation route and a tourist attraction, lies
+            underutilized.
+          </p>
+        </article>
+
+        <article>
+          <h2>Infrastructure Needs</h2>
+          <p>
+            The most pressing need is the rehabilitation of the Calabar Port
+            Market and its surrounding infrastructure. The area has long lacked
+            proper maintenance, and without urgent intervention, it risks
+            further degradation.
+          </p>
+          <ul>
+            <li>Roads leading to the market are in disrepair.</li>
+            <li>
+              Basic facilities like water supply, sanitation, and waste
+              management are insufficient or non-existent.
+            </li>
+            <li>
+              The old foreign residences, relics of the colonial era, remain
+              abandoned and could be restored for modern use.
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h2>Opportunities</h2>
+          <p>Despite the challenges, Calabar South is ripe with opportunity:</p>
+          <ul>
+            <li>
+              <strong>Employment:</strong> By redeveloping the market, hundreds
+              of jobs could be created, ranging from construction to market
+              management.
+            </li>
+            <li>
+              <strong>Transportation:</strong> The river could serve as a
+              transportation route, alleviating pressure on roads.
+            </li>
+            <li>
+              <strong>Revenue Generation:</strong> Like Tin Can Island Port in
+              Lagos, a revitalized Calabar Port could become a revenue hub.
+            </li>
+            <li>
+              <strong>Cultural Tourism:</strong> Historical buildings could
+              attract tourists, boosting the local economy.
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h2>Images</h2>
+      
+          <div class="image-gallery">
+              <div>
+                  <p>Calarbar Port View</p>
+                  <img src="/images/water.jpeg" alt="Calabar Port Market" />
+              </div>
+      
+              <div>
+                  <p>Calabar Port View</p>
+                  <img src="/images/offload.jpeg" alt="Akwa Ibom Port Side" />
+              </div>
+      
+              <div>
+                  <p>Port View</p>
+                  <img src="/images/offload1 (1).jpeg" alt="Cameroon" />
+              </div>
+      
+              <div>
+                  <p>The Image of Another Location 1</p>
+                  <img src="/images/offload1 (2).jpeg" alt="Another Location 1" />
+              </div>
+      
+              <div>
+                  <p>Port outskirt</p>
+                  <img src="/images/outskirt.jpeg" alt="Another Location 2" />
+              </div>
+      
+              <div>
+                  <p>Calabar Port Market</p>
+                  <img src="/images/marjet.jpeg" alt="Another Location 3" />
+              </div>
+          </div>
+      </article>
+      
+      </section>
+      <section>
+        <div class="container" style="display: flex; height: 600px">
+          <div
+            id="sidebar"
+            style="
+              position: fixed;
+              top: 100px;
+              left: 0;
+              width: 300px;
+              height: 600px;
+              background-color: #f8f9fa;
+              padding: 10px;
+              display: none;
+              overflow-y: auto;
+            "
+          >
+            <button
+              id="close-sidebar"
+              style="
+                background: none;
+                border: none;
+                font-size: 20px;
+                cursor: pointer;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+              "
+            >
+              &times;
+            </button>
+            <h3 id="sidebar-title">Details</h3>
+            <img
+              id="sidebar-image"
+              src=""
+              style="width: 100%; height: auto"
+              alt="Infrastructure Image"
+            />
+            <p id="sidebar-description" style="font-size: 12px"></p>
+            <p id="sidebar-text" style="font-size: 12px; margin-top: 10px">
+              adding new descriptions
+            </p>
+            <button id="next-arrow">Next</button>
+          </div>
+
+          <!-- <div style="margin-left: 320px; flex-grow: 1;"> -->
+          <h2>Nigeria Infrastructure Map</h2>
+          <div id="map" style="height: 600px; width: 100%"></div>
+          <!-- </div> -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 Calabar South Revitalization Project. All rights reserved.</p>
+    </footer>
+    <script src="./scrpt.js"></script>
+  </body>
+</html>
